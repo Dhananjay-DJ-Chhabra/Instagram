@@ -9,21 +9,67 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    let usernameCellphoneTextfield: UITextField = {
+        return UITextField()
+    }()
+    
+    let passwordTextfield: UITextField = {
+        return UITextField()
+    }()
+    
+    let loginButton: UIButton = {
+        return UIButton()
+    }()
+    
+    let createNewAccountButton: UIButton = {
+        return UIButton()
+    }()
+    
+    let termsButton: UIButton = {
+        return UIButton()
+    }()
+    
+    let privacyButton: UIButton = {
+        return UIButton()
+    }()
+    
+    let headerView: UIView = {
+        return UIView()
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBackground
+        addSubviews()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func addSubviews(){
+        view.addSubview(usernameCellphoneTextfield)
+        view.addSubview(passwordTextfield)
+        view.addSubview(loginButton)
+        view.addSubview(createNewAccountButton)
+        view.addSubview(termsButton)
+        view.addSubview(privacyButton)
+        view.addSubview(headerView)
+        
     }
-    */
+    
+    @objc func didTapLoginButton() {
+        
+    }
+    
+    @objc func didTapCreateNewAccountButton() {
+        
+    }
+    
+    @objc func didTapTermsButton() {
+        
+    }
+    
+    @objc func didTapPrivacyButton() {
+        
+    }
 
 }
